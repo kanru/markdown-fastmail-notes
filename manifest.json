@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Markdown Fastmail Notes",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Render plain text Markdown formatted Fastmail Notes in HTML",
   "homepage_url": "https://github.com/kanru/markdown-fastmail-notes",
   "content_scripts": [

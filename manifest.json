@@ -3,6 +3,7 @@
   "name": "Markdown Fastmail Notes",
   "version": "1.0",
   "description": "Render plain text Markdown formatted Fastmail Notes in HTML",
+  "homepage_url": "https://github.com/kanru/markdown-fastmail-notes",
   "content_scripts": [
     {
       "matches": ["https://www.fastmail.com/notes/*"],

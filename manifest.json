@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Markdown Fastmail Notes",
+  "version": "1.0",
+  "description": "Render plain text Markdown formatted Fastmail Notes in HTML",
+  "content_scripts": [
+    {
+      "matches": ["https://www.fastmail.com/notes/*"],
+      "js": ["commonmark.min.js", "mmdwn.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

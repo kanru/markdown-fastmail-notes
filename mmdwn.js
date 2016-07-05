@@ -21,11 +21,11 @@ function MarkdownIt () {
   container.appendChild(renderedArticle);
 }
 
-MarkdownIt();
-
 // Respond to mutations
 let mut_config = { childList: true, subtree: true };
 let mut_observer = new MutationObserver(mutations => {
-  MarkdownIt();
+  if (location.pathname.startsWith("/notes")) {
+    MarkdownIt();
+  }
 });
 mut_observer.observe(document.body, mut_config);

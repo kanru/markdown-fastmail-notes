@@ -6,9 +6,9 @@
   "homepage_url": "https://github.com/kanru/markdown-fastmail-notes",
   "content_scripts": [
     {
-      "matches": ["https://www.fastmail.com/notes/*"],
+      "matches": ["*://www.fastmail.com/*"],
       "js": ["commonmark.min.js", "mmdwn.js"],
-      "run_at": "document_end"
+      "run_at": "document_idle"
     }
   ]
 }

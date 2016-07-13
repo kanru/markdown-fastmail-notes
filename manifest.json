@@ -1,13 +1,25 @@
 {
   "manifest_version": 2,
   "name": "Markdown Fastmail Notes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Render plain text Markdown formatted Fastmail Notes in HTML",
   "homepage_url": "https://github.com/kanru/markdown-fastmail-notes",
+  "applications": {
+    "gecko": {
+      "id": "{ac27335e-ace4-4ca0-8b11-fd0e10d00be7}",
+      "strict_min_version": "42.0",
+      "strict_max_version": "*"
+    }
+  },
   "content_scripts": [
     {
-      "matches": ["*://www.fastmail.com/*"],
-      "js": ["commonmark.min.js", "mmdwn.js"],
+      "matches": [
+        "*://www.fastmail.com/*"
+      ],
+      "js": [
+        "commonmark.min.js",
+        "mmdwn.js"
+      ],
       "run_at": "document_idle"
     }
   ]
